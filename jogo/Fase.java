@@ -192,7 +192,7 @@ public class Fase extends JPanel implements ActionListener{
 
             if(formaPlayer.intersects(formaObstaculo)){
                 player.setLife(player.getLife()- tempObstaculo.getDano());
-                player.setImagem(player.getLife());
+                player.setImagem(player.getLife()); // AQUI
                 if(player.getLife() < 1){
                     player.setVisivel(false);
                     emJogo = false;

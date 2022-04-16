@@ -55,32 +55,28 @@ public class Player extends Objeto{
 		// ends 
 		
 	}
+	public void redefinirImagem(int medida){
+		imagem = imagem.getScaledInstance(medida, medida, Image.SCALE_DEFAULT);
+	}
 	
 
 	public void setImagem(int status) {
 		// classe que muda o tamanho do personagem caso ele perca vida, por enquanto ele só perde, add depois ganho
 		switch(status){
 			case 5:
-			ImageIcon referencia5 = new ImageIcon("res//bike3.gif");
-			this.imagem = referencia5.getImage().getScaledInstance(60, 60, Image.SCALE_DEFAULT);
+			redefinirImagem(60);;
 			break;
 			case 4:
-			ImageIcon referencia4 = new ImageIcon("res//bike3.gif");
-			this.imagem = referencia4.getImage().getScaledInstance(55, 55, Image.SCALE_DEFAULT);
+			redefinirImagem(55);
 			break;
 			case 3:
-			ImageIcon referencia3 = new ImageIcon("res//bike3.gif");
-			this.imagem = referencia3.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT);
+			redefinirImagem(50);
 			break;
 			case 2:
-			ImageIcon referencia2 = new ImageIcon("res//bike3.gif");
-			this.imagem = referencia2.getImage().getScaledInstance(45, 45, Image.SCALE_DEFAULT);
+			redefinirImagem(45);
 			break;
 			case 1:
-			ImageIcon referencia1 = new ImageIcon("res//bike3.gif");
-			this.imagem = referencia1.getImage().getScaledInstance(40, 40, Image.SCALE_DEFAULT);
-			break;
-			default:
+			redefinirImagem(40);
 			break;
 		}
 	}
