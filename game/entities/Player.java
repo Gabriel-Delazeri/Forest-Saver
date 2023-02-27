@@ -1,8 +1,10 @@
-package jogo;
+package game.entities;
+
+import game.application.Level;
 
 import java.awt.event.KeyEvent;
 
-public class Player extends Sprite{
+public class Player extends Sprite {
 
 	private int dx, dy; 
 	private int life; 
@@ -16,8 +18,8 @@ public class Player extends Sprite{
 	@Override
 	public void mexer()
 	{ 
-		x += (x + dx < 0 | x + dx > Fase.LARGURA_TELA - this.largura)? 0: dx;
-		y += (y + dy < 0 | y + dy > Fase.ALTURA_TELA - this.altura)? 0: dy; 
+		x += (x + dx < 0 | x + dx > Level.SCREEN_WIDTH - this.largura)? 0: dx;
+		y += (y + dy < 0 | y + dy > Level.SCREEN_HEIGHT - this.altura)? 0: dy;
 	}
 
 

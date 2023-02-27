@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaAps">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaAps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

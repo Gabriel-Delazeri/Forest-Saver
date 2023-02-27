@@ -1,4 +1,6 @@
-package jogo;
+package game.entities;
+
+import game.application.Level;
 
 import javax.swing.ImageIcon;
 import java.awt.Image;
@@ -21,7 +23,7 @@ public abstract class Sprite {
     public void mexer(){
 
         if(this.x < 0){
-            this.x = Fase.LARGURA_TELA + 200;
+            this.x = Level.SCREEN_WIDTH + 200;
         } else {
             this.x -= velocidade;
         }

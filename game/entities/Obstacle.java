@@ -1,12 +1,12 @@
-package jogo;
+package game.entities;
 
 import java.util.Random;
 
-public class Obstaculo extends Sprite{
+public class Obstacle extends Sprite {
 
     private int dano;
 
-    public Obstaculo(int x, int y, int velocidade){
+    public Obstacle(int x, int y, int velocidade){
         super(x, y, velocidade);
         Random random = new Random();
         switch(random.nextInt(6)){
